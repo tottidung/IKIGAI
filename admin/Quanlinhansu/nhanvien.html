@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Charts - Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="../assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="/admin/index.html" class="logo">
+              <img
+                src="/admin/assets/img/kaiadmin/logo_light.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Trang Chủ</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/index.html">
+                        <span class="sub-item">Trang chủ</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item  ">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Quản Lý Phòng</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse " id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/QuanliPhong/newroom.html">
+                        <span class="sub-item">Phòng Đặt Mới</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="/admin/QuanliPhong/cancelrooms.html">
+                        <span class="sub-item">Phòng Bị Hủy</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/QuanliPhong/themphong.html">
+                        <span class="sub-item">Thêm Phòng</span>
+                      </a>
+                      </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-th-list"></i>
+                  <p>Quản Lí Doanh Thu</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/sidebar-style-2.html">
+                        <span class="sub-item">Thống Kê Doanh Thu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#forms">
+                  <i class="fas fa-pen-square"></i>
+                  <p>Quản Lí Hóa Đơn</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="forms">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/Quanlyhoadon/dathanhtoan.html">
+                        <span class="sub-item">Các Hóa Đơn Đã Thanh Toán</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/Quanlyhoadon/chuathanhtoan.html">
+                        <span class="sub-item">Các Hóa Đơn Chưa Thanh Toán</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-table"></i>
+                  <p>Quản Lí Dịch Vụ</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li >
+                      <a href="/admin/Quanlidichvu/nhahang.html">
+                        <span class="sub-item">Nhà hàng</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="/admin/Quanlidichvu/khachsan.html">
+                        <span class="sub-item">Khách sạn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item ">
+                <a data-bs-toggle="collapse" href="#maps">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Quản Lí Khách Hàng</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="maps">
+                  <ul class="nav nav-collapse">
+                    <li >
+                      <a href="/admin/maps/googlemaps.html">
+                        <span class="sub-item">Khách Vãn Lai</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="/admin/maps/jsvectormap.html">
+                        <span class="sub-item">Khách Hàng Thân Quen</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item active submenu ">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Quản Lí Nhân Sự</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse show" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li class="active">
+                      <a href="/admin/Quanlinhansu/nhanvien.html">
+                        <span class="sub-item">Nhân Viên</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="nav-item">
+                  <a  href="/admin/Setting.html">
+                    <i class="fas fa-cog"></i>       
+                      Settings </a>
+                </li>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="/admin/widgets.html">
+                  <i class="fas fa-desktop"></i>
+                  <p>Widgets</p>
+                  <span class="badge badge-success">4</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../../documentation/index.html">
+                  <i class="fas fa-file"></i>
+                  <p>Documentation</p>
+                  <span class="badge badge-secondary">1</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#submenu">
+                  <i class="fas fa-bars"></i>
+                  <p>Menu Levels</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="submenu">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav1">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                      <div class="collapse" id="subnav1">
+                        <ul class="nav nav-collapse subnav">
+                          <li>
+                            <a href="#">
+                              <span class="sub-item">Level 2</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="sub-item">Level 2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav2">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                      <div class="collapse" id="subnav2">
+                        <ul class="nav nav-collapse subnav">
+                          <li>
+                            <a href="#">
+                              <span class="sub-item">Level 2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="sub-item">Level 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-panel">
+      <!-- End Sidebar -->
+      <div class="container">
+        <h1>Quản Lý Nhân Viên</h1>
+    
+        <!-- Thanh tìm kiếm -->
+        <input type="text" id="search-input" placeholder="Search by employee name..." onkeyup="searchByEmployeeName()">
+    
+        <!-- Nút xuất dữ liệu ra CSV -->
+        <button id="export-btn" onclick="exportTableToCSV()">Export to CSV</button>
+        
+        <!-- Nút thêm nhân viên -->
+        <button id="add-employee-btn" onclick="openAddEmployeeModal()">Add Employee</button>
+    
+        <!-- Bảng quản lý nhân viên -->
+        <table id="employee-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên Nhân Viên</th>
+              <th>Chức Vụ</th>
+              <th>Ngày Vào Làm</th>
+              <th>Lương</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dữ liệu sẽ được thêm vào đây -->
+          </tbody>
+        </table>
+    </div>
+    
+    <!-- Modal thêm/sửa nhân viên -->
+    <div id="employee-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title">Add Employee</h2>
+          <form id="employee-form">
+            <label for="employee-id">Employee ID:</label>
+            <input type="text" id="employee-id" required>
+            <label for="employee-name">Employee Name:</label>
+            <input type="text" id="employee-name" required>
+            <label for="position">Position:</label>
+            <input type="text" id="position" required>
+            <label for="hire-date">Hire Date:</label>
+            <input type="date" id="hire-date" required>
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" required>
+            <button type="submit">Save</button>
+          </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+     
+    
+    
+
+      <!-- Custom template | don't include it in your project! -->
+      <div class="custom-template">
+        <div class="title">Settings</div>
+        <div class="custom-content">
+          <div class="switcher">
+            <div class="switch-block">
+              <h4>Logo Header</h4>
+              <div class="btnSwitch">
+                <button
+                  type="button"
+                  class="selected changeLogoHeaderColor"
+                  data-color="dark"
+                ></button>
+                <button
+                  type="button"
+                  class="selected changeLogoHeaderColor"
+                  data-color="blue"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="purple"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="light-blue"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="green"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="orange"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="red"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="white"
+                ></button>
+                <br />
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="dark2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="blue2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="purple2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="light-blue2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="green2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="orange2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeLogoHeaderColor"
+                  data-color="red2"
+                ></button>
+              </div>
+            </div>
+            <div class="switch-block">
+              <h4>Navbar Header</h4>
+              <div class="btnSwitch">
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="dark"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="blue"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="purple"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="light-blue"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="green"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="orange"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="red"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="white"
+                ></button>
+                <br />
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="dark2"
+                ></button>
+                <button
+                  type="button"
+                  class="selected changeTopBarColor"
+                  data-color="blue2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="purple2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="light-blue2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="green2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="orange2"
+                ></button>
+                <button
+                  type="button"
+                  class="changeTopBarColor"
+                  data-color="red2"
+                ></button>
+              </div>
+            </div>
+            <div class="switch-block">
+              <h4>Sidebar</h4>
+              <div class="btnSwitch">
+                <button
+                  type="button"
+                  class="selected changeSideBarColor"
+                  data-color="white"
+                ></button>
+                <button
+                  type="button"
+                  class="changeSideBarColor"
+                  data-color="dark"
+                ></button>
+                <button
+                  type="button"
+                  class="changeSideBarColor"
+                  data-color="dark2"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-toggle">
+          <i class="icon-settings"></i>
+        </div>
+      </div>
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Kaiadmin JS -->
+    <script src="../assets/js/kaiadmin.min.js"></script>
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="../assets/js/setting-demo2.js"></script>
+    <script>
+      
+      var lineChart = document.getElementById("lineChart").getContext("2d"),
+        barChart = document.getElementById("barChart").getContext("2d"),
+        pieChart = document.getElementById("pieChart").getContext("2d"),
+        doughnutChart = document
+          .getElementById("doughnutChart")
+          .getContext("2d"),
+        radarChart = document.getElementById("radarChart").getContext("2d"),
+        bubbleChart = document.getElementById("bubbleChart").getContext("2d"),
+        multipleLineChart = document
+          .getElementById("multipleLineChart")
+          .getContext("2d"),
+        multipleBarChart = document
+          .getElementById("multipleBarChart")
+          .getContext("2d"),
+        htmlLegendsChart = document
+          .getElementById("htmlLegendsChart")
+          .getContext("2d");
+
+      var myLineChart = new Chart(lineChart, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "Active Users",
+              borderColor: "#1d7af3",
+              pointBorderColor: "#FFF",
+              pointBackgroundColor: "#1d7af3",
+              pointBorderWidth: 2,
+              pointHoverRadius: 4,
+              pointHoverBorderWidth: 1,
+              pointRadius: 4,
+              backgroundColor: "transparent",
+              fill: true,
+              borderWidth: 2,
+              data: [
+                542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900,
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+            labels: {
+              padding: 10,
+              fontColor: "#1d7af3",
+            },
+          },
+          tooltips: {
+            bodySpacing: 4,
+            mode: "nearest",
+            intersect: 0,
+            position: "nearest",
+            xPadding: 10,
+            yPadding: 10,
+            caretPadding: 10,
+          },
+          layout: {
+            padding: { left: 15, right: 15, top: 15, bottom: 15 },
+          },
+        },
+      });
+
+      var myBarChart = new Chart(barChart, {
+        type: "bar",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "Sales",
+              backgroundColor: "rgb(23, 125, 255)",
+              borderColor: "rgb(23, 125, 255)",
+              data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        },
+      });
+
+      var myPieChart = new Chart(pieChart, {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [50, 35, 15],
+              backgroundColor: ["#1d7af3", "#f3545d", "#fdaf4b"],
+              borderWidth: 0,
+            },
+          ],
+          labels: ["New Visitors", "Subscribers", "Active Users"],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+            labels: {
+              fontColor: "rgb(154, 154, 154)",
+              fontSize: 11,
+              usePointStyle: true,
+              padding: 20,
+            },
+          },
+          pieceLabel: {
+            render: "percentage",
+            fontColor: "white",
+            fontSize: 14,
+          },
+          tooltips: false,
+          layout: {
+            padding: {
+              left: 20,
+              right: 20,
+              top: 20,
+              bottom: 20,
+            },
+          },
+        },
+      });
+
+      var myDoughnutChart = new Chart(doughnutChart, {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              data: [10, 20, 30],
+              backgroundColor: ["#f3545d", "#fdaf4b", "#1d7af3"],
+            },
+          ],
+
+          labels: ["Red", "Yellow", "Blue"],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+          },
+          layout: {
+            padding: {
+              left: 20,
+              right: 20,
+              top: 20,
+              bottom: 20,
+            },
+          },
+        },
+      });
+
+      var myRadarChart = new Chart(radarChart, {
+        type: "radar",
+        data: {
+          labels: ["Running", "Swimming", "Eating", "Cycling", "Jumping"],
+          datasets: [
+            {
+              data: [20, 10, 30, 2, 30],
+              borderColor: "#1d7af3",
+              backgroundColor: "rgba(29, 122, 243, 0.25)",
+              pointBackgroundColor: "#1d7af3",
+              pointHoverRadius: 4,
+              pointRadius: 3,
+              label: "Team 1",
+            },
+            {
+              data: [10, 20, 15, 30, 22],
+              borderColor: "#716aca",
+              backgroundColor: "rgba(113, 106, 202, 0.25)",
+              pointBackgroundColor: "#716aca",
+              pointHoverRadius: 4,
+              pointRadius: 3,
+              label: "Team 2",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+          },
+        },
+      });
+
+      var myBubbleChart = new Chart(bubbleChart, {
+        type: "bubble",
+        data: {
+          datasets: [
+            {
+              label: "Car",
+              data: [
+                { x: 25, y: 17, r: 25 },
+                { x: 30, y: 25, r: 28 },
+                { x: 35, y: 30, r: 8 },
+              ],
+              backgroundColor: "#716aca",
+            },
+            {
+              label: "Motorcycles",
+              data: [
+                { x: 10, y: 17, r: 20 },
+                { x: 30, y: 10, r: 7 },
+                { x: 35, y: 20, r: 10 },
+              ],
+              backgroundColor: "#1d7af3",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+          },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            xAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        },
+      });
+
+      var myMultipleLineChart = new Chart(multipleLineChart, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "Python",
+              borderColor: "#1d7af3",
+              pointBorderColor: "#FFF",
+              pointBackgroundColor: "#1d7af3",
+              pointBorderWidth: 2,
+              pointHoverRadius: 4,
+              pointHoverBorderWidth: 1,
+              pointRadius: 4,
+              backgroundColor: "transparent",
+              fill: true,
+              borderWidth: 2,
+              data: [30, 45, 45, 68, 69, 90, 100, 158, 177, 200, 245, 256],
+            },
+            {
+              label: "PHP",
+              borderColor: "#59d05d",
+              pointBorderColor: "#FFF",
+              pointBackgroundColor: "#59d05d",
+              pointBorderWidth: 2,
+              pointHoverRadius: 4,
+              pointHoverBorderWidth: 1,
+              pointRadius: 4,
+              backgroundColor: "transparent",
+              fill: true,
+              borderWidth: 2,
+              data: [10, 20, 55, 75, 80, 48, 59, 55, 23, 107, 60, 87],
+            },
+            {
+              label: "Ruby",
+              borderColor: "#f3545d",
+              pointBorderColor: "#FFF",
+              pointBackgroundColor: "#f3545d",
+              pointBorderWidth: 2,
+              pointHoverRadius: 4,
+              pointHoverBorderWidth: 1,
+              pointRadius: 4,
+              backgroundColor: "transparent",
+              fill: true,
+              borderWidth: 2,
+              data: [10, 30, 58, 79, 90, 105, 117, 160, 185, 210, 185, 194],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "top",
+          },
+          tooltips: {
+            bodySpacing: 4,
+            mode: "nearest",
+            intersect: 0,
+            position: "nearest",
+            xPadding: 10,
+            yPadding: 10,
+            caretPadding: 10,
+          },
+          layout: {
+            padding: { left: 15, right: 15, top: 15, bottom: 15 },
+          },
+        },
+      });
+
+      var myMultipleBarChart = new Chart(multipleBarChart, {
+        type: "bar",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "First time visitors",
+              backgroundColor: "#59d05d",
+              borderColor: "#59d05d",
+              data: [95, 100, 112, 101, 144, 159, 178, 156, 188, 190, 210, 245],
+            },
+            {
+              label: "Visitors",
+              backgroundColor: "#fdaf4b",
+              borderColor: "#fdaf4b",
+              data: [
+                145, 256, 244, 233, 210, 279, 287, 253, 287, 299, 312, 356,
+              ],
+            },
+            {
+              label: "Pageview",
+              backgroundColor: "#177dff",
+              borderColor: "#177dff",
+              data: [
+                185, 279, 273, 287, 234, 312, 322, 286, 301, 320, 346, 399,
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: "bottom",
+          },
+          title: {
+            display: true,
+            text: "Traffic Stats",
+          },
+          tooltips: {
+            mode: "index",
+            intersect: false,
+          },
+          responsive: true,
+          scales: {
+            xAxes: [
+              {
+                stacked: true,
+              },
+            ],
+            yAxes: [
+              {
+                stacked: true,
+              },
+            ],
+          },
+        },
+      });
+
+      // Chart with HTML Legends
+
+      var gradientStroke = htmlLegendsChart.createLinearGradient(
+        500,
+        0,
+        100,
+        0
+      );
+      gradientStroke.addColorStop(0, "#177dff");
+      gradientStroke.addColorStop(1, "#80b6f4");
+
+      var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+      gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+      gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+      var gradientStroke2 = htmlLegendsChart.createLinearGradient(
+        500,
+        0,
+        100,
+        0
+      );
+      gradientStroke2.addColorStop(0, "#f3545d");
+      gradientStroke2.addColorStop(1, "#ff8990");
+
+      var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+      gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+      gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+      var gradientStroke3 = htmlLegendsChart.createLinearGradient(
+        500,
+        0,
+        100,
+        0
+      );
+      gradientStroke3.addColorStop(0, "#fdaf4b");
+      gradientStroke3.addColorStop(1, "#ffc478");
+
+      var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+      gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+      gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+      var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "Subscribers",
+              borderColor: gradientStroke2,
+              pointBackgroundColor: gradientStroke2,
+              pointRadius: 0,
+              backgroundColor: gradientFill2,
+              legendColor: "#f3545d",
+              fill: true,
+              borderWidth: 1,
+              data: [
+                154, 184, 175, 203, 210, 231, 240, 278, 252, 312, 320, 374,
+              ],
+            },
+            {
+              label: "New Visitors",
+              borderColor: gradientStroke3,
+              pointBackgroundColor: gradientStroke3,
+              pointRadius: 0,
+              backgroundColor: gradientFill3,
+              legendColor: "#fdaf4b",
+              fill: true,
+              borderWidth: 1,
+              data: [
+                256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521,
+              ],
+            },
+            {
+              label: "Active Users",
+              borderColor: gradientStroke,
+              pointBackgroundColor: gradientStroke,
+              pointRadius: 0,
+              backgroundColor: gradientFill,
+              legendColor: "#177dff",
+              fill: true,
+              borderWidth: 1,
+              data: [
+                542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900,
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            display: false,
+          },
+          tooltips: {
+            bodySpacing: 4,
+            mode: "nearest",
+            intersect: 0,
+            position: "nearest",
+            xPadding: 10,
+            yPadding: 10,
+            caretPadding: 10,
+          },
+          layout: {
+            padding: { left: 15, right: 15, top: 15, bottom: 15 },
+          },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  fontColor: "rgba(0,0,0,0.5)",
+                  fontStyle: "500",
+                  beginAtZero: false,
+                  maxTicksLimit: 5,
+                  padding: 20,
+                },
+                gridLines: {
+                  drawTicks: false,
+                  display: false,
+                },
+              },
+            ],
+            xAxes: [
+              {
+                gridLines: {
+                  zeroLineColor: "transparent",
+                },
+                ticks: {
+                  padding: 20,
+                  fontColor: "rgba(0,0,0,0.5)",
+                  fontStyle: "500",
+                },
+              },
+            ],
+          },
+          legendCallback: function (chart) {
+            var text = [];
+            text.push('<ul class="' + chart.id + '-legend html-legend">');
+            for (var i = 0; i < chart.data.datasets.length; i++) {
+              text.push(
+                '<li><span style="background-color:' +
+                  chart.data.datasets[i].legendColor +
+                  '"></span>'
+              );
+              if (chart.data.datasets[i].label) {
+                text.push(chart.data.datasets[i].label);
+              }
+              text.push("</li>");
+            }
+            text.push("</ul>");
+            return text.join("");
+          },
+        },
+      });
+
+      var myLegendContainer = document.getElementById("myChartLegend");
+
+      // generate HTML legend
+      myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+      // bind onClick event to all LI-tags of the legend
+      var legendItems = myLegendContainer.getElementsByTagName("li");
+      for (var i = 0; i < legendItems.length; i += 1) {
+        legendItems[i].addEventListener("click", legendClickCallback, false);
+      }
+    </script>
+
+    
+  </body>
+</html>
