@@ -4,4 +4,6 @@ Mô tả nghiệp vụ:https://docs.google.com/document/d/19odYlPJxcHgIS59z0XMBc
 
 File excel:
 
+Project Planning:https://docs.google.com/document/d/1o4r1yQVstOaCa2_Q5xMbhWfLaMMah7B4/edit?usp=drive_link&ouid=110317789160305978674&rtpof=true&sd=true
+
 Figma:
