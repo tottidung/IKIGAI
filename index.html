@@ -37,175 +37,6 @@
           </a>
         </div>
 
-        <!-- Modal Đăng Nhập (Login) -->
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form>
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-person-circle fs-3 me-2"></i>User Login
-          </h5>
-          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label class="form-label">Email address</label>
-            <input type="email" class="form-control shadow-none">
-          </div>
-          <div class="mb-4">
-            <label class="form-label">Password</label>
-            <input type="password" class="form-control shadow-none">
-          </div>
-          <div class="d-flex align-items-center justify-content-between mb-2">
-            <button type="submit" class="btn btn-dark shadow-none me-lg-2 me-3">LOGIN</button>
-            <div>
-              <a href="#forgotModal" data-bs-toggle="modal" data-bs-target="#forgotModal" class="custom-link-black text-decoration-none me-2">Forgot Password?</a>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Đổi Mật Khẩu (Change Password) -->
-<div class="modal fade" id="changePasswordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changePasswordLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form>
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-lock fs-3 me-2"></i>Change Password
-          </h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label class="form-label">Current Password</label>
-            <input type="password" class="form-control shadow-none" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">New Password</label>
-            <input type="password" class="form-control shadow-none" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Confirm New Password</label>
-            <input type="password" class="form-control shadow-none" required>
-          </div>
-          <button type="submit" class="btn btn-dark shadow-none w-100">Change Password</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-   
-<!-- Modal Quên Mật Khẩu (Forgot Password) -->
-<div class="modal fade" id="forgotModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="forgotModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form>
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-envelope fs-3 me-2"></i>Forgot Password
-          </h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label class="form-label">Enter your email address</label>
-            <input type="email" class="form-control shadow-none" required placeholder="Enter email">
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-dark shadow-none w-100">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-        
-
-        <div class="modal fade" id="forgotModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <form>
-                <div class="modal-header">
-                  <h5 class="modal-title d-flex align-items-center">
-                    <i class="bi bi-person-circle fs3 me-2"></i>User Login
-                  </h5>
-                  <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label class="form-label">Email address</label>
-                    <input type="email" class="form-control shadow-none" >
-                  </div>
-                  <div class="mb-4">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control shadow-none" >
-                  </div>
-                  <div class="mb-4">
-                    <label class="form-label">Re-ent Password</label>
-                    <input type="password" class="form-control shadow-none" >
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <button type="submit" class="btn btn-dark shadow-none me-lg-2 me-3">
-                      Reset Password
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <form>
-                <div class="modal-header">
-                  <h5 class="modal-title d-flex align-items-center">
-                    <i class="bi bi-person-lines-fill fs3 me-2"></i>User Registration
-                  </h5>
-                  <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-                    Lưu ý:Thông tin chi tiết phải trùng với ID
-                  </span>
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Name</label>
-                        <input type="email" class="form-control shadow-none">
-                      </div>
-                      <div class="col-md-6 p-0">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control shadow-none">
-                      </div>
-                      <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Phone Number</label>
-                        <input type="number" class="form-control shadow-none">
-                      </div>
-                      <div class="col-md-6 ps-0 mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control shadow-none">
-                      </div>
-                      <div class="col-md-6 p-0 mb-3">
-                        <label class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control shadow-none">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center my-1">
-                    <button type="submit" class="btn btn-dark shadow-none">REGISTER</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
         
         
         <div class="hambuger">
@@ -702,15 +533,7 @@
     }
   }
 });
-
   </script>
-
-
-
-  <!-- <section class="map top">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1637755481449!5m2!1sen!2snp" width="600" height="450" style="border:0;"
-      allowfullscreen="" loading="lazy"></iframe>
-  </section> -->
   <footer>
     <div class="container grid top">
       <div class="box">
@@ -724,10 +547,8 @@
           <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
         </div>
       </div>
-
       <div class="box">
         <h3>Recent News</h3>
-
         <ul>
           <li>Chuyến Tham Quan Đảo Bí Mật Chỉ Dành Cho Bạn</li>
           <li>Thư Giãn và Trốn Chạy Trong Những Nơi Ẩn Dật Tự Nhiên</li>
@@ -746,10 +567,8 @@
           <li>Điều Khoản & Điều Kiện</li>
         </ul>
       </div>
-
       <div class="box">
         <h3>Contact Us</h3>
-
         <ul>
           <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
           <li><i class="far fa-envelope"></i> nguyenphucgiahuy1404@gmail.com </li>
