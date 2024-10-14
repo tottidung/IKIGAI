@@ -8,8 +8,7 @@
 }
 
 body{
-    background-color: #3F9CC1;
-    background: linear-gradient(to right, #e2e2e2, #3F9CC1);
+    background: url(https://th.bing.com/th/id/R.a04a26cd229f227aa798ef75c7a44b5f?rik=Yvk00FPihdOsCw&riu=http%3a%2f%2fblog.gogo-vacations.com%2fwp-content%2fuploads%2f2017%2f02%2fNew-Pool.jpeg&ehk=o34KVLHqzrnYw3v%2fLY5oDOqvv3ny5NynOJFl%2bLECX%2fE%3d&risl=&pid=ImgRaw&r=0) no-repeat center fixed;
     display: flex;
     align-items: center;
     justify-content: center;
