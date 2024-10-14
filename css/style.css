@@ -28,13 +28,18 @@ a {
 .head_container {
   max-width: 90%;
   margin: auto;
+
 }
 
 /*--------------header--------*/
 header {
   background-color: #000;
   height: 75px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header-login{
@@ -311,7 +316,7 @@ input {
   height: 220px;
   position: absolute;
   bottom: 5px;
-  z-index: 2;
+  z-index: 1;
   right: 30%;
 }
 
@@ -708,4 +713,18 @@ footer li:hover {
 
 .custom-link-black {
   color: black !important; /* Màu đen cho văn bản */
+}
+
+.footer-resort{
+  background-color: #fff;
+}
+
+.overlay {
+  position: fixed;       /* Giữ vị trí cố định trên màn hình */
+  top: 0;
+  left: 0;
+  width: 100%;           /* Phủ toàn bộ chiều rộng */
+  height: 100%;          /* Phủ toàn bộ chiều cao */
+  background-color: rgba(0, 0, 0, 0.5);  /* Màu nền đen với độ mờ (opacity) */
+  z-index: 999;          /* Đảm bảo lớp phủ nằm trên cùng */
 }
