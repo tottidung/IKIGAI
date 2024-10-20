@@ -1,0 +1,151 @@
+/* Mobile width < 740px */
+/* Tablet width >= 740px and width < 1024px*/
+/* Pc width >= 1024px */
+
+
+/* Mobile & tablet */
+@media (max-width:1023px){
+ 
+    .mobile-category{
+        display: block;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+    }
+    .header__cart{
+        width: 30px;
+        text-align: right;
+        padding-right: 69px;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    .header__cart-list{
+        position: fixed;
+        top: var(--header-height);
+        right: 0px;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+        /* khi de 100% -644px thi se tao ra 1 khoang padding 2 ben sau do chia 2 cho deu lai */
+    }
+    .header__cart-list::after{
+        display: none;
+    }
+    .app__container{
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    }
+    .grid__column-2{
+        padding-top: 10px;
+    }
+
+    .header__sort-bar{
+        display: flex;
+    }
+
+    .app__content{
+        padding-top: 1px;
+    }
+
+}
+
+/* tablet */
+
+@media (min-width:740px) and (max-width:1023px){
+    :root{
+        --header-height:68px;
+        --navbar-height: 0px;
+    }
+    .hide-on-tablet{
+        display: none;
+    }
+
+    .header__cart{
+        width: 30px;
+        text-align: right;
+    }
+}
+
+/* Mobile */
+@media (max-width:739px){
+    :root{
+        --header-height:54px;
+        --navbar-height: 0px;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+    .header-with-search{
+        justify-content: space-between;
+    }
+    .header-logo,
+    .header-logo{
+        width: unset;
+    }
+    .header__logo-link{
+        margin-top: 5px;
+    }
+    .header__search{
+        position: fixed;
+        top: var(--header-height) ;
+        left: 0;
+        right: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        animation: mobbileSearchSideIn linear 0.3s;
+        display: none;
+    }
+    @keyframes mobbileSearchSideIn {
+        from{
+            opacity: 0;
+            top: calc(var(--header-height) / 2);
+        }
+        to{
+            opacity: 1;
+            top: var(--header-height);
+        }
+    }
+    .pagination-item{
+        margin: 0;
+    }
+    .pagination-item__link{
+        --height:28px;
+        font-size: 1.3rem;
+        min-width: 36px;
+    }
+    .app__content{
+        margin: 0 4px;
+    }
+    .header__mobile-search{
+        display: block;
+    }
+    .header__logo-img{
+        width: 120px;
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+    .header__cart-wrap{
+        margin-top: 15px;
+    }
+    .footer__content{
+        padding: 0 16px;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+    .footer__dowload,
+    .footer-item__link{
+        justify-content: center;
+    }
+    .footer__dowload-apps{
+        flex: unset;
+    }
+    .footer__dowload-app-link{
+        display: block;
+        padding: 6px 8px;
+    }
+}

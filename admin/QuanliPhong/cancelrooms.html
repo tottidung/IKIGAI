@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buttons - Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="/admin/assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="/admin/assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["/admin/assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/admin/assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="/admin/assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="/admin/assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="/admin/index.html" class="logo">
+              <img
+                src="/admin/assets/img/kaiadmin/logo_light.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Trang Chủ</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/index.html">
+                        <span class="sub-item">Trang chủ</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item active submenu">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Quản Lý Phòng</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse show" id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/QuanliPhong/newroom.html">
+                        <span class="sub-item">Phòng Đặt Mới</span>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="/admin/QuanliPhong/cancelrooms.html">
+                        <span class="sub-item">Phòng Bị Hủy</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/QuanliPhong/themphong.html">
+                        <span class="sub-item">Thêm Phòng</span>
+                      </a>
+                      </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-th-list"></i>
+                  <p>Quản Lí Doanh Thu</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/sidebar-style-2.html">
+                        <span class="sub-item">Thống Kê Doanh Thu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#forms">
+                  <i class="fas fa-pen-square"></i>
+                  <p>Quản Lí Hóa Đơn</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="forms">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/Quanlyhoadon/dathanhtoan.html">
+                        <span class="sub-item">Các Hóa Đơn Đã Thanh Toán</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/Quanlyhoadon/chuathanhtoan.html">
+                        <span class="sub-item">Các Hóa Đơn Chưa Thanh Toán</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-table"></i>
+                  <p>Quản Lí Dịch Vụ</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/Quanlidichvu/nhahang.html">
+                        <span class="sub-item">Nhà hàng</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/Quanlidichvu/khachsan.html">
+                        <span class="sub-item">Khách sạn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#maps">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Quản Lí Khách Hàng</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="maps">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/maps/googlemaps.html">
+                        <span class="sub-item">Khách Vãn Lai</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/maps/jsvectormap.html">
+                        <span class="sub-item">Khách Hàng Thân Quen</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Quản Lí Nhân Sự</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/Quanlinhansu/nhanvien.html">
+                        <span class="sub-item">Nhân Viên</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="nav-item">
+                  <a  href="/admin/Setting.html">
+                    <i class="fas fa-cog"></i>       
+                      Settings        </a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <nav
+			class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+		  >
+      <div class="container-fluid">
+       
+        <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+        <li class="nav-item topbar-user dropdown hidden-caret">
+          <a
+          class="dropdown-toggle profile-pic"
+          data-bs-toggle="dropdown"
+          href="#"
+          aria-expanded="false"
+          >
+          <div class="avatar-sm">
+            <img
+            src="/admin/assets/img/profilePic/gh1.jpg"
+            alt="..."
+            class="avatar-img rounded-circle"
+            />
+          </div>
+          <span class="profile-username">
+            <span class="op-7">Xin Chào,</span>
+            <span class="fw-bold">HuyBuu</span>
+          </span>
+          </a>
+          <ul class="dropdown-menu dropdown-user animated fadeIn">
+          <div class="dropdown-user-scroll scrollbar-outer">
+            <li>
+            <div class="user-box">
+              <div class="avatar-lg">
+              <img
+                src="assets/img/profilePic/gh1.jpg"
+                alt="image profile"
+                class="avatar-img rounded"
+              />
+              </div>
+              <div class="u-text">
+              <h4>Gia Huy</h4>
+              <p class="text-muted">huyne465@gmail.com</p>
+              <a
+                href="profile.html"
+                class="btn btn-xs btn-secondary btn-sm"
+                >View Profile</a
+              >
+              </div>
+            </div>
+            </li>
+            <li>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">My Profile</a>
+            <a class="dropdown-item" href="#">My Balance</a>
+            <a class="dropdown-item" href="#">Inbox</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Account Setting</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </div>
+          </ul>
+        </li>
+        </ul>
+      </div>
+      </nav>
+      <div class="container">
+        <h1>Phòng Đã Hủy </h1>
+    
+        <!-- Tìm kiếm và lọc thông tin -->
+        <input type="text" id="search-input" placeholder="Search by customer name or room number..." onkeyup="searchTable()">
+        
+        <label for="filter">Filter by Reason:</label>
+        <select id="filter" onchange="filterTable()">
+          <option value="">All</option>
+          <option value="No-show">No-show</option>
+          <option value="Customer Cancelled">Customer Cancelled</option>
+          <option value="Booking Error">Booking Error</option>
+        </select>
+    
+        <!-- Nút tải xuống dữ liệu -->
+        <button onclick="downloadCSV()">Download CSV</button>
+    
+        <!-- Bảng phòng đã hủy -->
+        <table id="canceled-rooms-table">
+          <thead>
+            <tr>
+              <th>Customer ID</th>
+              <th>Customer Name</th>
+              <th>Room Number</th>
+              <th>Cancellation Date</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dữ liệu sẽ được thêm vào đây -->
+          </tbody>
+        </table>
+      </div>
+    
+      <script src="script.js"></script>
+      </div>
+    <!--   Core JS Files   -->
+    <script src="/admin/assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="/admin/assets/js/core/popper.min.js"></script>
+    <script src="/admin/assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="/admin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Moment JS -->
+    <script src="/admin/assets/js/plugin/moment/moment.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="/admin/assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="/admin/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="/admin/assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="/admin/assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="/admin/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="/admin/assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="/admin/assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="/admin/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="/admin/assets/js/kaiadmin.min.js"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="/admin/assets/js/setting-demo2.js"></script>
+    <script>// Lấy phần tbody của bảng
+  let canceledRooms = [
+  {
+    customerId: 'C001',
+    customerName: 'John Doe',
+    roomNumber: '101',
+    cancellationDate: '2024-09-01',
+    reason: 'Customer Cancelled'
+  },
+  {
+    customerId: 'C002',
+    customerName: 'Jane Smith',
+    roomNumber: '102',
+    cancellationDate: '2024-09-03',
+    reason: 'No-show'
+  },
+  {
+    customerId: 'C003',
+    customerName: 'Michael Johnson',
+    roomNumber: '103',
+    cancellationDate: '2024-09-05',
+    reason: 'Booking Error'
+  }
+];
+
+// Thêm dữ liệu vào bảng
+function populateCanceledRoomsTable(filteredRooms) {
+  const tableBody = document.querySelector('#canceled-rooms-table tbody');
+  tableBody.innerHTML = ''; // Xóa nội dung cũ
+  filteredRooms.forEach(room => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${room.customerId}</td>
+      <td>${room.customerName}</td>
+      <td>${room.roomNumber}</td>
+      <td>${room.cancellationDate}</td>
+      <td>${room.reason}</td>
+    `;
+    tableBody.appendChild(row);
+  });
+}
+
+// Tìm kiếm theo tên khách hàng hoặc số phòng
+function searchTable() {
+  const input = document.getElementById('search-input').value.toLowerCase();
+  const filteredRooms = canceledRooms.filter(room => 
+    room.customerName.toLowerCase().includes(input) || room.roomNumber.toLowerCase().includes(input)
+  );
+  populateCanceledRoomsTable(filteredRooms);
+}
+
+// Lọc theo lý do hủy phòng
+function filterTable() {
+  const filterValue = document.getElementById('filter').value;
+  const filteredRooms = filterValue ? 
+    canceledRooms.filter(room => room.reason === filterValue) : 
+    canceledRooms;
+  populateCanceledRoomsTable(filteredRooms);
+}
+
+// Tải dữ liệu xuống dạng CSV
+function downloadCSV() {
+  const rows = [
+    ["Customer ID", "Customer Name", "Room Number", "Cancellation Date", "Reason"],
+    ...canceledRooms.map(room => [room.customerId, room.customerName, room.roomNumber, room.cancellationDate, room.reason])
+  ];
+
+  let csvContent = "data:text/csv;charset=utf-8," 
+    + rows.map(row => row.join(",")).join("\n");
+
+  const link = document.createElement('a');
+  link.setAttribute('href', encodeURI(csvContent));
+  link.setAttribute('download', 'canceled_rooms.csv');
+  document.body.appendChild(link); // Required for Firefox
+  link.click();
+  document.body.removeChild(link); // Clean up
+}
+
+// Khởi tạo bảng
+populateCanceledRoomsTable(canceledRooms);
+
+
+      </script>
+  </body>
+</html>

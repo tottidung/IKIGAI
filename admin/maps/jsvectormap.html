@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jsvectormap - Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="/admin/assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Fonts and icons -->
+    <script src="/admin/assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["/admin/assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/admin/assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="/admin/assets/css/style.css" />
+    <link rel="stylesheet" href="/admin/assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="/admin/assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="/admin/index.html" class="logo">
+              <img
+                src="/admin/assets/img/kaiadmin/logo_light.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Trang Chủ</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/index.html">
+                        <span class="sub-item">Trang chủ</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item  ">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Quản Lý Phòng</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse " id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/QuanliPhong/newroom.html">
+                        <span class="sub-item">Phòng Đặt Mới</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="/admin/QuanliPhong/cancelrooms.html">
+                        <span class="sub-item">Phòng Bị Hủy</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/QuanliPhong/traphong.html">
+                        <span class="sub-item">Phòng Đã Trả</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/QuanliPhong/lichsudatphong.html">
+                        <span class="sub-item">Lịch Sử Đặt Phòng</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/QuanliPhong/themphong.html">
+                        <span class="sub-item">Thêm Phòng</span>
+                      </a>
+                      </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-th-list"></i>
+                  <p>Quản Lí Doanh Thu</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/sidebar-style-2.html">
+                        <span class="sub-item">Thống Kê Doanh Thu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#forms">
+                  <i class="fas fa-pen-square"></i>
+                  <p>Quản Lí Hóa Đơn</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="forms">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/Quanlyhoadon/dathanhtoan.html">
+                        <span class="sub-item">Các Hóa Đơn Đã Thanh Toán</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/admin/Quanlyhoadon/chuathanhtoan.html">
+                        <span class="sub-item">Các Hóa Đơn Chưa Thanh Toán</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-table"></i>
+                  <p>Quản Lí Dịch Vụ</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li >
+                      <a href="/admin/Quanlidichvu/nhahang.html">
+                        <span class="sub-item">Nhà hàng</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="/admin/Quanlidichvu/khachsan.html">
+                        <span class="sub-item">Khách sạn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item active submenu">
+                <a data-bs-toggle="collapse" href="#maps">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Quản Lí Khách Hàng</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse show" id="maps">
+                  <ul class="nav nav-collapse">
+                    <li >
+                      <a href="/admin/maps/googlemaps.html">
+                        <span class="sub-item">Khách Vãn Lai</span>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="/admin/maps/jsvectormap.html">
+                        <span class="sub-item">Khách Hàng Thân Quen</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Quản Lí Nhân Sự</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="/admin/Quanlinhansu/nhanvien.html">
+                        <span class="sub-item">Nhân Viên</span>
+                      </a>
+                    </li>    
+                  </ul>
+                </div>
+                <li class="nav-item">
+                  <a  href="/admin/Setting.html">
+                    <i class="fas fa-cog"></i>       
+                      Settings        </a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <nav
+        class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+      >
+        <div class="container-fluid">
+          <nav
+            class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+          >
+          </nav>
+
+          <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+            <li
+              class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                <i class="fa fa-search"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-search animated fadeIn">
+                <form class="navbar-left navbar-form nav-search">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Search ..."
+                      class="form-control"
+                    />
+                  </div>
+                </form>
+              </ul>
+            </li>
+            <li class="nav-item topbar-icon dropdown hidden-caret">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="messageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+              </a>
+              <ul
+                class="dropdown-menu messages-notif-box animated fadeIn"
+                aria-labelledby="messageDropdown"
+              >
+                <li>
+                  <div
+                    class="dropdown-title d-flex justify-content-between align-items-center"
+                  >
+                    Messages
+                    <a href="#" class="small">Mark all as read</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="message-notif-scroll scrollbar-outer">
+                    <div class="notif-center">
+                      <a href="#">
+                        <div class="notif-img">
+                          <img
+                            src="/admin/assets/img/jm_denis.jpg"
+                            alt="Img Profile"
+                          />
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">Jimmy Denis</span>
+                          <span class="block"> How are you ? </span>
+                          <span class="time">5 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-img">
+                          <img
+                            src="/admin/assets/img/chadengle.jpg"
+                            alt="Img Profile"
+                          />
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">Chad</span>
+                          <span class="block"> Ok, Thanks ! </span>
+                          <span class="time">12 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-img">
+                          <img
+                            src="/admin/assets/img/mlane.jpg"
+                            alt="Img Profile"
+                          />
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">Jhon Doe</span>
+                          <span class="block">
+                            Ready for the meeting today...
+                          </span>
+                          <span class="time">12 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-img">
+                          <img
+                            src="/admin/assets/img/talha.jpg"
+                            alt="Img Profile"
+                          />
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">Talha</span>
+                          <span class="block"> Hi, Apa Kabar ? </span>
+                          <span class="time">17 minutes ago</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+            
+              </ul>
+            </li>
+        
+
+            <li class="nav-item topbar-user dropdown hidden-caret">
+              <a
+                class="dropdown-toggle profile-pic"
+                data-bs-toggle="dropdown"
+                href="#"
+                aria-expanded="false"
+              >
+                <div class="avatar-sm">
+                  <img
+                    src="/admin/assets/img/profilePic/gh1.jpg"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+                <span class="profile-username">
+                  <span class="op-7">Xin Chào,</span>
+                  <span class="fw-bold">HuyBuu</span>
+                </span>
+              </a>
+              <ul class="dropdown-menu dropdown-user animated fadeIn">
+                <div class="dropdown-user-scroll scrollbar-outer">
+                  <li>
+                    <div class="user-box">
+                      <div class="avatar-lg">
+                        <img
+                          src="assets/img/profilePic/gh1.jpg"
+                          alt="image profile"
+                          class="avatar-img rounded"
+                        />
+                      </div>
+                      <div class="u-text">
+                        <h4>Gia Huy</h4>
+                        <p class="text-muted">huyne465@gmail.com</p>
+                        <a
+                          href="profile.html"
+                          class="btn btn-xs btn-secondary btn-sm"
+                          >View Profile</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">My Profile</a>
+                    <a class="dropdown-item" href="#">My Balance</a>
+                    <a class="dropdown-item" href="#">Inbox</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Account Setting</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <div class="container">
+          <h1>Khách Hàng Thân Quen</h1>
+  
+          <form id="loyalCustomerForm">
+              <div class="form-group">
+                  <label for="name">Họ và tên:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Số điện thoại:</label>
+                  <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                  <label for="membership">Mức độ thành viên:</label>
+                  <select id="membership" name="membership" required>
+                      <option value="Silver">Silver</option>
+                      <option value="Gold">Gold</option>
+                      <option value="Platinum">Platinum</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="lastStay">Ngày cuối cùng ở lại</label>
+                  <input type="date" id="lastStay" name="lastStay" required>
+              </div>
+              <div class="form-group">
+                  <label for="points">Điểm thành viên:</label>
+                  <input type="number" id="points" name="points" required>
+              </div>
+              <button type="submit">Thêm thành viên</button>
+          </form>
+  
+          <table id="loyalCustomerTable">
+              <thead>
+                  <tr>
+                      <th>Tên</th>
+                      <th>Email</th>
+                      <th>Số điện thoại</th>
+                      <th>Membership</th>
+                      <th>Last Stay</th>
+                      <th>Điểm thành viên</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Data will be appended here -->
+              </tbody>
+          </table>
+      </div>
+  
+      <script src="script.js"></script>
+      </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="/admin/assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="/admin/assets/js/core/popper.min.js"></script>
+    <script src="/admin/assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="/admin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Kaiadmin JS -->
+    <script src="/admin/assets/js/kaiadmin.min.js"></script>
+    <script>
+    document.getElementById("loyalCustomerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Lấy giá trị từ form
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const membership = document.getElementById("membership").value;
+    const lastStay = document.getElementById("lastStay").value;
+    const points = document.getElementById("points").value;
+
+    // Tạo một hàng mới trong bảng khách hàng thân quen
+    const table = document.getElementById("loyalCustomerTable").getElementsByTagName("tbody")[0];
+    const newRow = table.insertRow();
+
+    newRow.innerHTML = `
+        <td>${name}</td>
+        <td>${email}</td>
+        <td>${phone}</td>
+        <td>${membership}</td>
+        <td>${lastStay}</td>
+        <td>${points}</td>
+    `;
+
+    // Xóa form sau khi thêm
+    document.getElementById("loyalCustomerForm").reset();
+});
+
+    </script>
+  </body>
+</html>

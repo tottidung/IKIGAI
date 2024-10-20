@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKIGAI Hotel - FACILITIES</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <style>
+    body{
+      background: url(https://cache.marriott.com/marriottassets/marriott/SJDLC/sjdlc-guest-room-8088-hor-clsc.jpg?interpolation=progressive-bilinear&) no-repeat center fixed;
+    }
+    .row{
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <header style="background-color: #000;" class="header" id="navigation-menu">
+        <div class="container">
+          <nav>
+            <a href="#" class="logo"> <img src="/image/logoikigai/image-removebg-preview.png" alt=""></a>
+            <ul class="nav-menu">
+              <li> <a href="/index.html" class="header-nav-link">Home</a> </li>
+              <li> <a href="/Additional_pages/rooms.html" class="header-nav-link">Rooms</a> </li>
+              <li> <a href="/Additional_pages/facilities.html" class="header-nav-link">Facilities</a> </li>
+              <li> <a href="/Additional_pages/contact.html" class="header-nav-link">Contact us</a> </li>
+              <li> <a href="/Additional_pages/about.html" class="header-nav-link">About us</a> </li>
+            </ul>
+            <div class="header-login">
+              <a href="/Additional_pages/login.html" type="button" class="btn bg-dark text-white btn-outline-dark shadow-none me-lg-3 me-2"  >
+                Login
+              </a>
+              <a href="/Additional_pages/login.html" type="button" class="btn bg-dark text-white btn-outline-dark shadow-none"  >
+                Register
+              </a>
+            <div class="hambuger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </header>
+     
+      <div class="container ">
+        <div class="row">
+          <div class="my-5 px-4">
+            <h2 class="fw-bold text-light h-font text-center">OUR ROOMS</h2>
+            <div class="h-line bg-light">
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-12 mb-lg-0 mb-4">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow ">
+                    <div class="container-fluid flex-lg-column align-items-stretch">
+                      <h4 class="mt-2">FILTERS</h4>
+                      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#filterDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
+                        <div class="border bg-light p-3 rounded mb-3">
+                            <h5 class="mb-3" style="font-size: 18px;">CHECK AVAILABILITY</h5>
+                            <label class="form-label">Check-in:</label>
+                            <input type="date" class="form-control shadow-none mb-3" placeholder="Check-in-Date">
+                            <label class="form-label">Check-out:</label>
+                            <input type="date" class="form-control shadow-none" placeholder="Check-in-Date">
+                        </div>
+                        <div class="border bg-light p-3 rounded mb-3">
+                            <h5 class="mb-3" style="font-size: 18px;">FACILITIES</h5>
+                            <div class="mb-2">
+                              <input type="checkbox" id="f1" class="form-check-input shadow-none" >
+                              <label class="form-check-label" for="f1">Facility one</label>
+                            </div>
+                            <div class="mb-2">
+                              <input type="checkbox" id="f2" class="form-check-input shadow-none" >
+                              <label class="form-check-label" for="f2">Facility two</label>
+                            </div>
+                            <div class="mb-2">
+                              <input type="checkbox" id="f3" class="form-check-input shadow-none" >
+                              <label class="form-check-label" for="f3">Facility three</label>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="border bg-light p-3 rounded mb-3">
+                          <h5 class="mb-3" style="font-size: 18px;">GUESTS</h5>
+                          <div class="d-flex">
+                            <div class="me-3">
+                              <label class="form-label">Adults</label>
+                              <input type="number" class="form-control shadow-none" >
+                            </div>
+                            <div>
+                              <label class="form-label">Children</label>
+                              <input type="number" class="form-control shadow-none" >
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                </div>
+              <div class="col-lg-9 col-md-12 px-4 px-lg-0">
+                <div class="card mb-4 border-0 shadow">
+                  <div class="row g-0 p-3 align-items-center">
+                    <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                      <img src="/image/trangchu/r1.jpg" class="img-fluid rounded">
+                    </div>
+                     <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                      <h5 class="mb-3">Phòng Thường</h5>  
+                      <div class="features mb-3">
+                      <h6 class="mb-1">Features</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        2 Rooms
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        1 Bathroom
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        1 Balcony
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        3 Sofa
+                      </span>
+                      </div>
+                      <div class="facilities mb-3">
+                      <h6 class="mb-1">Facilities</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Wifi
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Television
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        AC
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Room heater
+                      </span>
+                      </div>
+                      <div class="guests">
+                        <h6 class="mb-1">Guests</h6>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          2 người lớn
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          2 trẻ nhỏ
+                        </span>
+                      </div>
+                     </div>
+                    
+                    <div class="col-md-2 mt-lg-0 mt-md-4 mt-0 text-center">
+                      <p> <span>Đ</span>500.000 <span>/1 đêm</span> </p>
+                      <a href="#" class="btn btn-sm w-100 text-white bg-dark shadow-none mb-2">Đặt phòng</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4 border-0 shadow">
+                  <div class="row g-0 p-3 align-items-center">
+                    <div class="col-md-5 mb-lg-0 mb-md-3 mb-3">
+                      <img src="/image/trangchu/r2.jpg" class="img-fluid rounded">
+                    </div>
+                     <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                      <h5 class="mb-3">Phòng Cận Cao Cấp</h5>  
+                      <div class="features mb-3">
+                      <h6 class="mb-1">Features</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        2 Rooms
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        1 Bathroom
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        1 Balcony
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        3 Sofa
+                      </span>
+                      </div>
+                      <div class="facilities mb-3">
+                      <h6 class="mb-1">Facilities</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Wifi
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Television
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        AC
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Room heater
+                      </span>
+                      </div>
+                      <div class="guests">
+                        <h6 class="mb-1">Guests</h6>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          5 người lớn
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          4 trẻ nhỏ
+                        </span>
+                      </div>
+                     </div>
+                    
+                    <div class="col-md-2 text-center">
+                      <p> <span>Đ</span>2.000.000 <span>/1 đêm</span> </p>
+                      <a href="#" class="btn btn-sm w-100 text-white bg-dark shadow-none mb-2">Đặt phòng</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4 border-0 shadow">
+                  <div class="row g-0 p-3 align-items-center">
+                    <div class="col-md-5 mb-lg-0 mb-md-3 mb-3">
+                      <img src="/image/trangchu/r3.jpg" class="img-fluid rounded">
+                    </div>
+                     <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                      <h5 class="mb-3">Phòng Cao Cấp</h5>  
+                      <div class="features mb-3">
+                      <h6 class="mb-1">Features</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        4 Rooms
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        2 Bathroom
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        2 Balcony
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        4 Sofa
+                      </span>
+                      </div>
+                      <div class="facilities mb-3">
+                      <h6 class="mb-1">Facilities</h6>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Wifi
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Television
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        AC
+                      </span>
+                      <span class="badge rounded-pill bg-light text-dark text-wrap">
+                        Room heater
+                      </span>
+                      </div>
+                      <div class="guests">
+                        <h6 class="mb-1">Guests</h6>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          5 người lớn
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          4 trẻ nhỏ
+                        </span>
+                      </div>
+                     </div>
+                    
+                    <div class="col-md-2 text-center">
+                      <p> <span>Đ</span>10.000.000 <span>/1 đêm</span> </p>
+                      <a href="#" class="btn btn-sm w-100 text-white bg-dark shadow-none mb-2">Đặt phòng</a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+        </div>
+
+
+      <footer class="footer-resort">
+        <div class="container grid top pt-5">
+          <div class="box">
+            <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+            <p>Họ đã lấy đi những gì không thuộc về họ, và họ có trách nhiệm cho những gì họ đã làm, bao gồm cả sự thiếu sót trong việc thực hiện nghĩa vụ của mình.</p>
+            <p>Các phương thức thanh toán được chấp nhận</p>
+            <div class="payment grid">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" />
+              <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+              <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+              <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+            </div>
+          </div>
+    
+          <div class="box">
+            <h3>Recent News</h3>
+    
+            <ul>
+              <li>Chuyến Tham Quan Đảo Bí Mật Chỉ Dành Cho Bạn</li>
+              <li>Thư Giãn và Trốn Chạy Trong Những Nơi Ẩn Dật Tự Nhiên</li>
+              <li>Tháng Chín Tại Khách Sạn Luviana</li>
+              <li>Buổi Hòa Nhạc Trực Tiếp Tại Luviana</li>
+            </ul>
+          </div>
+    
+          <div class="box">
+            <h3>For Customers</h3>
+            <ul>
+              <li>Về Luviana</li>
+              <li>Chăm Sóc Khách Hàng/Giúp Đỡ</li>
+              <li>Tài Khoản Doanh Nghiệp</li>
+              <li>Thông Tin Tài Chính</li>
+              <li>Điều Khoản & Điều Kiện</li>
+            </ul>
+          </div>
+    
+          <div class="box">
+            <h3>Contact Us</h3>
+    
+            <ul>
+              <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
+              <li><i class="far fa-envelope"></i> nguyenphucgiahuy1404@gmail.com </li>
+              <li><i class="far fa-phone-alt"></i>    0868004667 </li>
+              <li><i class="far fa-comments"></i>     Dịch Vụ Khách Hàng 24/7 </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
